@@ -28,6 +28,20 @@
 - Release: [latest](https://github.com/techkwon/neis-school-cli/releases/latest)
 - ClawHub: [neis-school-cli](https://clawhub.ai/skills/neis-school-cli)
 
+## Screenshots
+
+School search JSON:
+
+![School search screenshot](docs/launch/screenshots/demo-school-search.png)
+
+Meal lookup:
+
+![Meal lookup screenshot](docs/launch/screenshots/demo-meal.png)
+
+Timetable lookup:
+
+![Timetable lookup screenshot](docs/launch/screenshots/demo-timetable.png)
+
 ## Goals
 
 - 웹의 NEIS OpenAPI를 안정적으로 다루는 로컬 CLI 제공
