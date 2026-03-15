@@ -21,10 +21,14 @@ neis-school-skill/
 │       ├── cli-manifest.json
 │       └── json-output-example.json
 ├── integrations/
-│   └── claude/
+│   ├── claude/
+│   │   └── commands/
+│   │       └── sc/
+│   │           └── neis-school.md
+│   └── openclaw/
 │       └── commands/
-│           └── sc/
-│               └── neis-school.md
+│           └── sg/
+│               └── neis-school.toml
 └── skills/
     └── neis-school-cli/
         ├── SKILL.md
@@ -98,7 +102,15 @@ Codex:
 
 Claude:
 - 저장소 안의 [neis-school.md](/Users/techkwon/Documents/MyApps/neis-school-skill/integrations/claude/commands/sc/neis-school.md)를 사용
-- 로컬 `~/.claude/commands/sc/`에 연결하면 `/sc:neis-school` 형태로 재사용 가능
+- 저장소 안의 [Claude skill](/Users/techkwon/Documents/MyApps/neis-school-skill/integrations/claude/skills/neis-school-cli/SKILL.md)도 함께 제공
+- 로컬 `~/.claude/skills/neis-school-cli/`에 연결하면 `/neis-school-cli` 형태의 정식 skill로 재사용 가능
+- `~/.claude/commands/sc/` command도 유지해서 `/sc:neis-school`로 바로 호출 가능
+
+OpenClaw:
+- 저장소 안의 [neis-school.toml](/Users/techkwon/Documents/MyApps/neis-school-skill/integrations/openclaw/commands/sg/neis-school.toml)를 사용
+- 로컬 `~/.gemini/commands/sg/`에 연결하면 `/sg:neis-school` 형태로 재사용 가능
+- 현재 머신에서는 OpenClaw command registry가 `~/.gemini/commands/sg/` 구조로 보이므로 그 위치를 정식 등록 지점으로 사용
+- OpenClaw workspace skill 경로인 `~/.openclaw/skills/neis-school-cli/`에도 동일 CLI 기반 skill을 연결
 
 로컬 등록 스크립트:
 

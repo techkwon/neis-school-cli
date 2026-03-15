@@ -1,0 +1,32 @@
+description = "Query Korean school search, meals, and timetables through the local neis-school CLI"
+
+prompt = """
+---
+name: neis-school
+category: workflow
+complexity: standard
+agents: ["technical-writer"]
+---
+
+# /sg:neis-school
+
+Use the local `neis-school-cli` to query the official NEIS OpenAPI.
+
+## Usage
+
+- `/sg:neis-school school search "세종과학예술영재학교"`
+- `/sg:neis-school meal --school "늘봄초등학교" --region "세종" --date 2026-03-16`
+- `/sg:neis-school timetable --school "세종과학예술영재학교" --region "세종" --date 2026-03-16 --grade 1 --classroom 1`
+
+## Execution
+
+1. Run `bash /Users/techkwon/Documents/MyApps/neis-school-skill/skills/neis-school-cli/scripts/run-neis-cli.sh ...`
+2. Prefer `--json` when another step or tool will consume the result
+3. If school names are ambiguous, add `--region`
+4. Return the CLI output directly unless the user asked for transformation
+
+## Output Contract
+
+- JSON output includes `ok`, `cli`, `provider`, `command`, `endpoint`, `query`, `count`, and `data`
+- Contract file: `/Users/techkwon/Documents/MyApps/neis-school-skill/docs/ai/cli-manifest.json`
+"""
