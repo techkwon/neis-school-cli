@@ -18,7 +18,7 @@ from typing import Any, Callable, Iterable
 
 API_BASE_URL = "https://open.neis.go.kr/hub"
 CLI_NAME = "neis-school-cli"
-CLI_VERSION = "0.2.0"
+CLI_VERSION = "0.2.1"
 SUCCESS_CODE = "INFO-000"
 NO_DATA_CODE = "INFO-200"
 OUTPUT_TEXT = "text"

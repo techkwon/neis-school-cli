@@ -1,6 +1,6 @@
 {
   "name": "neis-school-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "purpose": "AI-friendly CLI for Korean school search, meals, and timetables using the NEIS OpenAPI",
   "provider": "neis",
   "commands": [

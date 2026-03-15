@@ -2,7 +2,7 @@
   "ok": true,
   "cli": {
     "name": "neis-school-cli",
-    "version": "0.2.0"
+    "version": "0.2.1"
   },
   "provider": "neis",
   "command": "timetable.lookup",

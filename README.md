@@ -1,6 +1,6 @@
 # NEIS School CLI
 
-[![GitHub release](https://img.shields.io/github/v/release/techkwon/neis-school-cli)](https://github.com/techkwon/neis-school-cli/releases/tag/v0.2.0)
+[![GitHub release](https://img.shields.io/github/v/release/techkwon/neis-school-cli)](https://github.com/techkwon/neis-school-cli/releases/latest)
 [![CI](https://img.shields.io/github/actions/workflow/status/techkwon/neis-school-cli/ci.yml?branch=main)](https://github.com/techkwon/neis-school-cli/actions/workflows/ci.yml)
 [![ClawHub](https://img.shields.io/badge/ClawHub-published-1f8b4c)](https://clawhub.ai/skills/neis-school-cli)
 
@@ -11,7 +11,7 @@
 ## Public Links
 
 - GitHub: [techkwon/neis-school-cli](https://github.com/techkwon/neis-school-cli)
-- Release: [v0.2.0](https://github.com/techkwon/neis-school-cli/releases/tag/v0.2.0)
+- Release: [latest](https://github.com/techkwon/neis-school-cli/releases/latest)
 - ClawHub: [neis-school-cli](https://clawhub.ai/skills/neis-school-cli)
 
 ## Goals
