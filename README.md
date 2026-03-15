@@ -45,6 +45,10 @@ OpenClaw / ClawHub:
 clawhub install neis-school-cli
 ```
 
+참고:
+- ClawHub는 현재 published skill 라이선스를 플랫폼 기본값인 `MIT-0`로 표시합니다.
+- 저장소 소스 코드는 루트 [LICENSE](LICENSE) 기준을 따릅니다.
+
 또는 저장소를 내려받은 뒤:
 
 ```bash
