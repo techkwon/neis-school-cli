@@ -38,6 +38,14 @@ class NeisCliTests(unittest.TestCase):
         self.assertEqual(neis_cli.endpoint_for_school_level("middle"), "misTimetable")
         self.assertEqual(neis_cli.endpoint_for_school_level("high"), "hisTimetable")
 
+    def test_school_level_handles_misc_middle_and_high_school_kinds(self):
+        middle = neis_cli.School("J10", "경기도교육청", "123", "테스트학교", "각종학교(중)", "경기도")
+        high = neis_cli.School("J10", "경기도교육청", "456", "테스트학교", "각종학교(고)", "경기도")
+        elementary = neis_cli.School("J10", "경기도교육청", "789", "테스트학교", "각종학교(초)", "경기도")
+        self.assertEqual(middle.school_level, "middle")
+        self.assertEqual(high.school_level, "high")
+        self.assertEqual(elementary.school_level, "elementary")
+
     def test_normalize_date_accepts_dashed_and_compact_formats(self):
         self.assertEqual(neis_cli.normalize_date("2026-03-16").isoformat(), "2026-03-16")
         self.assertEqual(neis_cli.normalize_date("20260316").isoformat(), "2026-03-16")

@@ -44,11 +44,12 @@ class School:
 
     @property
     def school_level(self) -> str:
-        if "초등" in self.school_kind:
+        school_kind = self.school_kind.replace(" ", "")
+        if "초등" in school_kind or "(초)" in school_kind:
             return "elementary"
-        if "중학" in self.school_kind:
+        if "중학" in school_kind or "중학교" in school_kind or "(중)" in school_kind:
             return "middle"
-        if "고등" in self.school_kind:
+        if "고등" in school_kind or "(고)" in school_kind:
             return "high"
         raise CliError(f"지원하지 않는 학교급입니다: {self.school_kind}", exit_code=1)
 
