@@ -1,0 +1,65 @@
+{
+  "name": "neis-school-cli",
+  "version": "0.2.0",
+  "purpose": "AI-friendly CLI for Korean school search, meals, and timetables using the NEIS OpenAPI",
+  "provider": "neis",
+  "commands": [
+    {
+      "id": "school.search",
+      "argv": [
+        "school",
+        "search",
+        "<school_name>"
+      ],
+      "options": [
+        "--region",
+        "--json"
+      ],
+      "endpoint": "schoolInfo",
+      "returns": "data.schools[]"
+    },
+    {
+      "id": "meal.lookup",
+      "argv": [
+        "meal"
+      ],
+      "options": [
+        "--school",
+        "--region",
+        "--date",
+        "--json"
+      ],
+      "endpoint": "mealServiceDietInfo",
+      "returns": "data.meals[]"
+    },
+    {
+      "id": "timetable.lookup",
+      "argv": [
+        "timetable"
+      ],
+      "options": [
+        "--school",
+        "--region",
+        "--date",
+        "--grade",
+        "--classroom",
+        "--json"
+      ],
+      "endpoint": "elsTimetable|misTimetable|hisTimetable",
+      "returns": "data.timetable[]"
+    }
+  ],
+  "json_envelope": {
+    "ok": "boolean",
+    "cli": {
+      "name": "string",
+      "version": "string"
+    },
+    "provider": "neis",
+    "command": "string",
+    "endpoint": "string",
+    "query": "object",
+    "count": "number",
+    "data": "object"
+  }
+}

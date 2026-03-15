@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "cli": {
+    "name": "neis-school-cli",
+    "version": "0.2.0"
+  },
+  "provider": "neis",
+  "command": "timetable.lookup",
+  "endpoint": "hisTimetable",
+  "query": {
+    "school_name": "세종과학예술영재학교",
+    "region": "세종",
+    "date": "2026-03-16",
+    "grade": "1",
+    "classroom": "1"
+  },
+  "count": 2,
+  "data": {
+    "school": {
+      "office_code": "I10",
+      "office_name": "세종특별자치시교육청",
+      "school_code": "9300181",
+      "school_name": "세종과학예술영재학교",
+      "school_kind": "고등학교",
+      "school_level": "high",
+      "location_name": "세종특별자치시"
+    },
+    "date": "2026-03-16",
+    "grade": "1",
+    "classroom": "1",
+    "timetable": [
+      {
+        "period": "1",
+        "subject": "음악"
+      },
+      {
+        "period": "2",
+        "subject": "음악"
+      }
+    ]
+  }
+}
