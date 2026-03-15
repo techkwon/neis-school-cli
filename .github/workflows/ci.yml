@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main, codex/bootstrap]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compile
+        run: |
+          python3 -m py_compile skills/neis-school-cli/scripts/neis_cli.py skills/neis-school-cli/tests/test_cli.py
+
+      - name: Unit tests
+        run: |
+          python3 -m unittest discover -s skills/neis-school-cli/tests -v
